@@ -1,18 +1,21 @@
 {
-  "compilerOptions": {
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "noImplicitAny": true,
-    "suppressImplicitAnyIndexErrors": true,
-    "removeComments": false,
-    "sourceMap": true,
-    "target": "es5"
-  },
-    "exclude": [
-      "node_modules",
-      "typings/main",
-      "typings/main.d.ts"
-  ]
+    "compilerOptions": {
+        "module": "es2015",
+        "target": "es5",
+        "noImplicitAny": false,
+        "sourceMap": true,
+        "moduleResolution": "node",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "lib": [
+            "es2015", "dom"
+        ],
+        "types": [
+            "node",
+            "jasmine"
+        ]
+    },
+    "awesomeTypeScriptLoaderOptions": {
+        "useWebpackText": true
+    }
 }
