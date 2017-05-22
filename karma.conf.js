@@ -1,26 +1,23 @@
-'use strict';
-
-module.exports = (config) => {
+module.exports = function (config) {
   config.set({
-      autoWatch: true,
-      browsers: ['Chrome', 'PhantomJS'],
-      files: [
-          '../node_modules/es6-shim/es6-shim.min.js',
-          'karma.entry.js'
-      ],
-      frameworks: ['jasmine'],
-      logLevel: config.LOG_INFO,
-      phantomJsLauncher: {
-        exitOnResourceError: true
-      },
-      preprocessors: {
-          'karma.entry.js': ['webpack', 'sourcemap']
-      },
-      reporters: ['dots'],
-      singleRun: false,
-      webpack: require('../webpack/webpack.test'),
-      webpackServer: {
-          noInfo: true
-      }
-  });
-};
+    basePath: '',
+    frameworks: ['jasmine'],
+    files: [
+      { pattern: 'test/main.js', watched: false }
+    ],
+    exclude: [
+    ],
+    preprocessors: {
+      'test/main.js': ['webpack', 'sourcemap']
+    },
+    webpack: require('./webpack.config')({env: 'test'}),
+    reporters: ['progress'],
+    port: 9876,
+    colors: true,
+    logLevel: config.LOG_INFO,
+    autoWatch: false,
+    browsers: ['PhantomJS'],
+    singleRun: true,
+    concurrency: Infinity
+  })
+}
