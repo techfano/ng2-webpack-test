@@ -5,7 +5,7 @@ Unit test demo for Angular 2 with webpack 2, Karma, Jasmine and PhantomJS :)
 
 # Instructions
 
-** 0. Install NodeJS ** 
+**0. Install NodeJS** 
 
 For more information visit the next website -> [here](https://nodejs.org/es/)
 
