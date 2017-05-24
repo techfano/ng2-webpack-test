@@ -1,3 +1,5 @@
+var webpack = require('webpack');
+var path = require('path');
 module.exports = () => {
     return {
         entry: {
@@ -25,6 +27,12 @@ module.exports = () => {
                 }
             ]
         },
-        devtool: 'inline-source-map'
+        devtool: 'inline-source-map',
+        plugins: [
+          new webpack.ContextReplacementPlugin(
+            /angular(\\|\/)core(\\|\/)@angular/,
+            path.resolve(__dirname, '../src')
+          )
+        ]
     };
 };

@@ -10,10 +10,7 @@ describe('BannerComponent (inline template)', () => {
   let de:      DebugElement;
   let el:      HTMLElement;
 
-  console.log('enter');
-
   beforeEach(() => {
-    console.log('enter now');
 
     TestBed.configureTestingModule({
       declarations: [ BannerComponent ], // declare the test component
@@ -40,4 +37,5 @@ describe('BannerComponent (inline template)', () => {
     fixture.detectChanges();
     expect(el.textContent).toContain('Test Title');
   });
+
 });
