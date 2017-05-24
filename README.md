@@ -26,4 +26,5 @@ npm test
 Review inside src/components/banner-inline.component.ts and check examples how to test Angular Components with Jasmine, for more details you can visit the next websites
 
 [Jasmine documentation](https://jasmine.github.io/2.4/introduction.html)
+
 [Angular Unit Test Docs](https://angular.io/docs/ts/latest/guide/testing.html)
