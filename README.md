@@ -22,7 +22,7 @@ npm test
  ```
 
  **3. Take a look into the code**
-Review inside src/demoUniTest folder and check examples how to test Angular with Jasmine
+Review inside [src/demoUniTest](https://github.com/techfano/ng2-webpack2-unit-test/tree/master/src/demoUnitTest) folder and check examples how to test Angular with Jasmine
 
 Unit testing examples:
 - Component
