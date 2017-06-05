@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { TestBed, async } from '@angular/core/testing';
-import { EchoPipe } from './echo.pipe';
+import { EchoPipe } from './demo.pipe';
 @Component({
     selector: 'test',
     template: `
