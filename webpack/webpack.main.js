@@ -6,7 +6,6 @@ const path = require('path');
 module.exports = {
 
         entry: {
-            vendor: './src/vendor.ts',
             main: './src/main.ts'
         },
         output: {
@@ -14,7 +13,7 @@ module.exports = {
             filename: '[name].bundle.js'
         },
         resolve: {
-            extensions: ['.js', '.ts', '.html', '.ejs']
+            extensions: ['.js', '.ts']
         },
         module: {
             rules: [
