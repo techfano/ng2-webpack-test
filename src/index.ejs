@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link charset="utf-8" href="<%= htmlWebpackPlugin.files.css%>" rel="stylesheet"/>
+  </head>
+  <body>
+    <my-app>
+      <div class="">
+        <h4>Loading</h4>
+      </div>
+    </my-app>
+
+    <% for (key in htmlWebpackPlugin.files.js) { %><script type="text/javascript" charset="utf-8" src="<%= htmlWebpackPlugin.files.js[key] %>"></script>
+    <% } %>
+  </body>
+</html>
